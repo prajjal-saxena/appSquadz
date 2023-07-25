@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+p{  font-size: 15px;}
+
+:root{ --bg-btn : rgb(255, 153, 0); --color-btn : #fff;}
+
+.logo{
+    position: relative;
+}
+.logo::after{
+    content: "";
+    position: absolute;
+    background: rgb(255, 166, 0);
+    width: 50%;
+    height: 3px;
+    bottom: 0px;
+    left: 0px;
+}
+.btn{
+    background: var(--bg-btn);
+    color: var(--color-btn);
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+@media (max-width: 600px){
+    p{
+        font-size: 9px;
+    }
+}
